@@ -34,6 +34,11 @@
 <link href="css/new-age.min.css" rel="stylesheet">
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script src="checkValidity.js"></script>
+<script type='text/javascript' src='jquery.min.js'></script>
+<script type='text/javascript' src='/js/form-validation.js'></script>
 </head>
 
 <body id="page-top">
@@ -238,9 +243,8 @@
 					<span class="icon-truck-new"></span>
 					<h3>Be a Manufacturer</h3>
 					<p>text für kunden...</p>
-					<form class="contact-box-below"
-						action="http://www.davidtheobald.de/easytoi-form-script.php"
-						method="POST" enctype="multipart/form-data">
+
+					<form class="contact-box-below">
 						<div class="col-md-6 form-line col-new">
 							<div class="form-group">
 								<span class="error"></span> <label for="exampleInputUsername">Your
@@ -264,7 +268,7 @@
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-								<button type="submit" value="Submit" id="send_message"
+								<button  onclick="refresh_div();" value="Submit" id="send_message"
 									class="btn btn-primary submit">
 									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
@@ -272,22 +276,18 @@
 							</div>
 						</div>
 					</form>
-					<script
-						src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
-					<script src="checkValidity.js"></script>
 					<script>
-						$(document).ready(function() {
-							$('form').checkValidity({
-								validateEvents : 'submit',
-								reset : function() {
-									$('textarea, input', this).reset();
+						function refresh_div() {
+							jQuery.ajax({
+								url : 'http://www.davidtheobald.de/easytoi-form-script.php',
+								type : 'POST',
+								success : function(results) {
+									jQuery(".result").html(results);
 								}
 							});
-							$('input:not([type=submit])').checkValidity({
-								validateEvents : 'change'
-							});
-						});
+						}
 					</script>
+
 
 				</div>
 				<!-- End manufacturer box -->
