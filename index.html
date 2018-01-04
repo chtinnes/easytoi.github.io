@@ -39,6 +39,7 @@
 <script src="checkValidity.js"></script>
 <script type='text/javascript' src='jquery.min.js'></script>
 <script type='text/javascript' src='/js/form-validation.js'></script>
+<script type='text/javascript' src='/js/form-post-method.js'></script>
 </head>
 
 <body id="page-top">
@@ -268,7 +269,7 @@
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-								<button  onclick="refresh_div();" value="Submit" id="send_message"
+								<button  onclick="sendForm();" value="Submit" id="send_message"
 									class="btn btn-primary submit">
 									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
@@ -276,19 +277,6 @@
 							</div>
 						</div>
 					</form>
-					<script>
-						function refresh_div() {
-							jQuery.ajax({
-								url : 'http://www.davidtheobald.de/easytoi-form-script.php',
-								type : 'POST',
-								success : function(results) {
-									jQuery(".result").html(results);
-								}
-							});
-						}
-					</script>
-
-
 				</div>
 				<!-- End manufacturer box -->
 			</div>
