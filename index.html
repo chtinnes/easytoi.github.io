@@ -238,36 +238,57 @@
 					<span class="icon-truck-new"></span>
 					<h3>Be a Manufacturer</h3>
 					<p>text für kunden...</p>
-					<form class="contact-box-below" action="http://www.davidtheobald.de/easytoi-form-script.php" method="post" enctype="multipart/form-data">
+					<form class="contact-box-below"
+						action="http://www.davidtheobald.de/easytoi-form-script.php"
+						method="POST" enctype="multipart/form-data">
 						<div class="col-md-6 form-line col-new">
 							<div class="form-group">
-								<label for="exampleInputUsername">Your name</label> <input name="sender_name"
-									type="text" class="form-control" id=""
-									placeholder=" Enter Name">
+								<span class="error"></span> <label for="exampleInputUsername">Your
+									name</label> <input required="true" name="sender_name" type="text"
+									class="form-control" id="" placeholder=" Enter Name">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail">Email Address</label> <input name="sender_email"
-									type="email" class="form-control" id="exampleInputEmail"
+								<span class="error"></span> <label for="exampleInputEmail">Email
+									Address</label> <input required="true" name="sender_email" type="email"
+									class="form-control" id="exampleInputEmail"
 									placeholder=" Enter Email Address">
 							</div>
 						</div>
 						<div class="col-md-6 col-new">
 							<div class="form-group">
-								<label for="description"> Message</label>
-								<textarea class="form-control message-input" name="sender_message" id="description"
+								<label for="description"> Message</label><span class="error"></span>
+								<textarea class="form-control message-input" required="true"
+									name="sender_message" id="description"
 									placeholder="Enter Your Message"></textarea>
 							</div>
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-								<button type="button" class="btn btn-primary submit">
+								<button type="submit" value="Submit" id="send_message"
+									class="btn btn-primary submit">
 									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
 								</button>
 							</div>
 						</div>
-
 					</form>
+					<script
+						src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+					<script src="checkValidity.js"></script>
+					<script>
+						$(document).ready(function() {
+							$('form').checkValidity({
+								validateEvents : 'submit',
+								reset : function() {
+									$('textarea, input', this).reset();
+								}
+							});
+							$('input:not([type=submit])').checkValidity({
+								validateEvents : 'change'
+							});
+						});
+					</script>
+
 				</div>
 				<!-- End manufacturer box -->
 			</div>
