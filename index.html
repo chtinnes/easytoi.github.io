@@ -246,8 +246,8 @@
 					<p>text für kunden...</p>
 
 					<form id="contactForm"
-						
-						class="contact-box-below">
+						action="http://www.davidtheobald.de/easytoi-form-script.php"
+						method="POST" class="contact-box-below">
 						<div class="col-md-6 form-line col-new">
 							<div class="form-group">
 								<span class="error"></span> <label for="exampleInputUsername">Your
@@ -274,10 +274,10 @@
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-							 <input type="submit" value="SEND" class="btn btn-primary submit" id="send_message" name="contactSubmit" />
+							 <button type="submit" value="SEND" class="btn btn-primary submit" id="send_message" name="contactSubmit" />
 							 <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
-							 </input>
+							 </button>
 							</div>
 						</div>
 					</form>
@@ -295,7 +295,7 @@
 							return true;
 						}
 					</script>
-
+	<!-- 
     <script> 
     $('#contactForm').on('submit', function(e) {
         e.preventDefault(); 
@@ -315,7 +315,7 @@
         });
     });
     </script> 
-
+	-->
 
 				</div>
 				<!-- End manufacturer box -->
