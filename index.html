@@ -38,6 +38,7 @@
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
 <script src="checkValidity.js"></script>
 <script type='text/javascript' src='jquery.min.js'></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type='text/javascript' src='/js/form-validation.js'></script>
 </head>
 
@@ -244,49 +245,77 @@
 					<h3>Be a Manufacturer</h3>
 					<p>text für kunden...</p>
 
-					<form action="http://www.davidtheobald.de/easytoi-form-script.php" method="POST" class="contact-box-below">
+					<form id="contactForm"
+						action="http://www.davidtheobald.de/easytoi-form-script.php"
+						method="POST" class="contact-box-below">
 						<div class="col-md-6 form-line col-new">
 							<div class="form-group">
 								<span class="error"></span> <label for="exampleInputUsername">Your
-									name</label> <input required name="sender_name" type="text"
-									class="form-control" id="" placeholder=" Enter Name">
+									name</label> <input oninvalid="InvalidMsg(this);" required
+									name="sender_name" type="text" class="form-control" id=""
+									placeholder=" Enter Name">
 							</div>
 							<div class="form-group">
 								<span class="error"></span> <label for="exampleInputEmail">Email
-									Address</label> <input required name="sender_email" type="email"
-									class="form-control" id="exampleInputEmail"
+									Address</label> <input oninvalid="InvalidMsg(this);"
+									oninput="InvalidMsg(this);" required name="sender_email"
+									type="email" class="form-control" id="exampleInputEmail"
 									placeholder=" Enter Email Address">
 							</div>
 						</div>
 						<div class="col-md-6 col-new">
 							<div class="form-group">
 								<label for="description"> Message</label><span class="error"></span>
-								<textarea class="form-control message-input" required
+								<textarea oninvalid="InvalidMsg(this);"
+									class="form-control message-input" required
 									name="sender_message" id="description"
 									placeholder="Enter Your Message"></textarea>
 							</div>
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-								<button type="submit" value="Submit" id="send_message"
-									class="btn btn-primary submit">
-									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+							 <button type="submit" value="SEND" class="btn btn-primary submit" id="send_message" name="contactSubmit" />
+							 <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
-								</button>
+							 </button>
 							</div>
 						</div>
+						<div id="loader"></div>
 					</form>
+
 					<script>
-						function refresh_div() {
-							jQuery.ajax({
-								url : 'http://www.davidtheobald.de/easytoi-form-script.php',
-								type : 'POST',
-								success : function(results) {
-									jQuery(".result").html(results);
-								}
-							});
+						function InvalidMsg(textbox) {
+							if (textbox.value == '') {
+								textbox.setCustomValidity('This field is required.');
+							} else if (textbox.validity.typeMismatch) {
+								textbox
+										.setCustomValidity('Please enter a valid email address.');
+							} else {
+								textbox.setCustomValidity('');
+							}
+							return true;
 						}
 					</script>
+
+    <script> 
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault(); 
+        var form = $(this); 
+        var post_url = form.attr('action'); 
+        var post_data = form.serialize(); 
+        $.ajax({
+            type: 'POST',
+            url: 'http://www.davidtheobald.de/easytoi-form-script.php', 
+            data: post_data,
+            success: function(msg) {
+            	 alert('ja!');
+            },
+            error: function(){
+                alert('error!');
+              }
+        });
+    });
+    </script> 
 
 
 				</div>
