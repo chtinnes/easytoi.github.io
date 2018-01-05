@@ -137,26 +137,35 @@ form {
 }
 
 div.g-recaptcha {
- margin: 15px auto !important;
-   width: auto !important;
-   height: auto !important;
-   text-align: -webkit-center;
-   text-align: -moz-center;
-   text-align: -o-center;
-   text-align: -ms-center;
+	margin: 15px auto !important;
+	width: auto !important;
+	height: auto !important;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: -o-center;
+	text-align: -ms-center;
 }
 
 .col-md-4 {
-	float:left;
+	float: left;
 }
 
-footer {
-	min-height: 300px;
+
+
+#footer {
+	margin-top:-40px;
+	font-size: 12px !important;
+	background-color: #222;
+	width: 100%;
+	bottom: 0;
+	color: rgba(255, 255, 255, .3);
 }
 
-.footer-links {
-	margin: 0;
+.footer-container {
+	margin-top:-50px;	
+		font-size: 12px !important;
 }
+
 
 .list-inline-item {
 	font-size: 12px !important;
@@ -915,8 +924,8 @@ section.contact ul.list-social li.social-google-plus a:hover {
 }
 
 footer {
-	padding: 25px 0;
-	text-align: center;
+padding: 50px 0;
+    text-align: left;
 	color: rgba(255, 255, 255, .3);
 	background-color: #222
 }
