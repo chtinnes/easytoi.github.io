@@ -146,6 +146,21 @@ div.g-recaptcha {
    text-align: -ms-center;
 }
 
+.col-md-4 {
+	float:left;
+}
+
+footer {
+	min-height: 300px;
+}
+
+.footer-links {
+	margin: 0;
+}
+
+.list-inline-item {
+	font-size: 12px !important;
+}
 
 .message-input {
 	height: 150px;

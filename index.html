@@ -274,10 +274,12 @@
 							<div class="g-recaptcha"
 								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
 							<div>
-							 <button type="submit" value="SEND" class="btn btn-primary submit" id="send_message" name="contactSubmit" />
-							 <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+								<button type="submit" value="SEND"
+									class="btn btn-primary submit" id="send_message"
+									name="contactSubmit">
+									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
 									Message
-							 </button>
+								</button>
 							</div>
 						</div>
 					</form>
@@ -285,7 +287,8 @@
 					<script>
 						function InvalidMsg(textbox) {
 							if (textbox.value == '') {
-								textbox.setCustomValidity('This field is required.');
+								textbox
+										.setCustomValidity('This field is required.');
 							} else if (textbox.validity.typeMismatch) {
 								textbox
 										.setCustomValidity('Please enter a valid email address.');
@@ -295,28 +298,6 @@
 							return true;
 						}
 					</script>
-	<!-- 
-    <script> 
-    $('#contactForm').on('submit', function(e) {
-        e.preventDefault(); 
-        var form = $(this); 
-        var post_url = form.attr('action'); 
-        var post_data = form.serialize(); 
-        $.ajax({
-            type: 'POST',
-            url: 'http://www.davidtheobald.de/easytoi-form-script.php', 
-            data: post_data,
-            success: function(msg) {
-            	 alert('ja!');
-            },
-            error: function(){
-                alert('error!');
-              }
-        });
-    });
-    </script> 
-	-->
-
 				</div>
 				<!-- End manufacturer box -->
 			</div>
@@ -326,20 +307,35 @@
 
 
 
-
 	<footer>
+		<div class="footerHeader"></div>
 		<div class="container">
-			<p>&copy; 2017 EasyTOI. All Rights Reserved.</p>
-			<ul class="list-inline">
-				<li class="list-inline-item"><a href="#">Imprint</a></li>
-				<li class="list-inline-item"><a href="#">Privacy</a></li>
-				<li class="list-inline-item"><a href="#">Terms</a></li>
-				<li class="list-inline-item"><a href="#">FAQ</a></li>
-			</ul>
+			<div class="col-md-4">
+				<h3>About us</h3>
+				<p>Text über uns...</p>
+			</div>
+
+			<div class="col-md-4">
+				<h3>Our Location</h3>
+				<iframe
+					src="https://maps.google.de/maps?hl=de&q=berlin&t=&z=12&ie=UTF8&iwloc=B&output=embed"
+					frameborder="0" style="border: 0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-4">
+				<h3>Contact Us</h3>
+				<p>
+					Phone : 123 - 456 - 789<br> E-mail : info@comapyn.com
+				</p>
+				<br>
+				<p>Text kontaktiere uns...</p>
+				<br> <span class="list-inline-item"><a href="#">Imprint</a></span>
+				<span class="list-inline-item"><a href="#">Privacy</a></span> <span
+					class="list-inline-item"><a href="#">Terms</a></span> <span
+					class="list-inline-item"><a href="#">FAQ</a></span>
+
+			</div>
 		</div>
 	</footer>
-
-
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
