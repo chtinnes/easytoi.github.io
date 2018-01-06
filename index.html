@@ -109,32 +109,23 @@
 	</header>
 
 	<section class="download bg-primary text-center" id="download">
+		<!-- Section title -->
+		<h2 class="menu-title">Download</h2>
+		<hr class="hr-menu-break-bgprim"></hr>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 mx-auto">
-					<h2 class="section-heading">Discover what all the buzz is
-						about!</h2>
-					<p>Our app is available on any mobile device! Download now to
-						get started!</p>
-					<div class="badges">
-						<a class="badge-link" href="#"><img
-							src="img/google-play-badge.svg" alt=""></a> <a
-							class="badge-link" href="#"><img
-							src="img/app-store-badge.svg" alt=""></a>
-					</div>
+	
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="features" id="features">
+		<!-- Section title -->
+		<h2 class="menu-title">Features</h2>
+		<hr class="hr-menu-break-service"></hr>
 		<div class="container">
-			<div class="section-heading text-center">
-				<h2>Unlimited Features, Unlimited Fun</h2>
-				<p class="text-muted">Check out what you can do with this app
-					theme!</p>
-				<hr>
-			</div>
 			<div class="row">
 				<div class="col-lg-4 my-auto">
 					<div class="device-container">
@@ -195,6 +186,7 @@
 		</div>
 	</section>
 
+	<!-- 
 	<section class="cta">
 		<div class="cta-content">
 			<div class="container">
@@ -207,19 +199,26 @@
 		</div>
 		<div class="overlay"></div>
 	</section>
+	-->
 
-
-
+	<!-- Start services section -->
 	<section class="services" id="services">
+		<!-- Section title -->
 		<h2 class="menu-title">Services</h2>
-		<hr class="hr-menu-break"></hr>
-		<div class="container"></div>
+		<hr class="hr-menu-break-service"></hr>
+		
+		<div class="container">
+		awdawd
+		</div>
 	</section>
+	<!-- End services section -->
 
 	<!-- Start contact section -->
 	<section class="contact bg-primary" id="contact">
+		<!-- Section title -->
 		<h2 class="menu-title">Contact Us</h2>
-		<hr class="hr-menu-break"></hr>
+		<hr class="hr-menu-break-bgprim"></hr>
+	
 		<div class="container contact-boxes">
 			<div class="row">
 				<!-- Start user box -->
@@ -228,228 +227,118 @@
 					<h3>Be a Smarthome User</h3>
 					<p>text für user...</p>
 					<div class="contact-box-below">
-						<h2>
-							<i class="fa fa-heart"></i> us, like us.
-						</h2>
+						<h2><i class="fa fa-heart"></i> us, like us.</h2>
 						<ul class="list-inline list-social">
-							<li class="list-inline-item social-twitter"><a href="#">
-									<i class="fa fa-twitter"></i>
-							</a></li>
-							<li class="list-inline-item social-facebook"><a href="#">
-									<i class="fa fa-facebook"></i>
-							</a></li>
-							<li class="list-inline-item social-google-plus"><a href="#">
-									<i class="fa fa-google-plus"></i>
-							</a></li>
+							<li class="list-inline-item social-twitter">
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item social-facebook">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item social-google-plus">
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<!-- End user box -->
+				
 				<!-- Start manufacturer box -->
 				<div class="col box">
 					<span class="icon-truck-new"></span>
 					<h3>Be a Manufacturer</h3>
 					<p>text für kunden...</p>
 
-					<form id="contactForm"
-						action="http://www.davidtheobald.de/easytoi-form-script.php"
+					<!-- Start Contact form -->
+					<form id="contactForm" action="http://www.davidtheobald.de/easytoi-form-script.php" 
 						method="POST" class="contact-box-below">
 						<div class="col-md-6 form-line col-new">
-							<div class="form-group">
-								<span class="error"></span> <label for="exampleInputUsername">Your
-									name</label> <input oninvalid="InvalidMsg(this);" required
-									name="sender_name" type="text" class="form-control" id=""
-									placeholder=" Enter Name">
+							<!-- Name -->
+							<div class="form-group"> 
+								<input oninvalid="InvalidMsg(this);" required name="sender_name" type="text" 
+									class="form-control" id="" placeholder="Name">
 							</div>
-							<div class="form-group">
-								<span class="error"></span> <label for="exampleInputEmail">Email
-									Address</label> <input oninvalid="InvalidMsg(this);"
-									oninput="InvalidMsg(this);" required name="sender_email"
-									type="email" class="form-control" id="exampleInputEmail"
-									placeholder=" Enter Email Address">
+							<!-- Email -->
+							<div class="form-group"> 
+								<input oninvalid="InvalidMsg(this);"
+									oninput="InvalidMsg(this);" required name="sender_email" type="email" 
+									class="form-control" id="exampleInputEmail" placeholder="E-Mail">
 							</div>
 						</div>
 						<div class="col-md-6 col-new">
+							<!-- Message -->
 							<div class="form-group">
-								<label for="description"> Message</label><span class="error"></span>
-								<textarea oninvalid="InvalidMsg(this);"
-									class="form-control message-input" required
-									name="sender_message" id="description"
-									placeholder="Enter Your Message"></textarea>
+								<textarea oninvalid="InvalidMsg(this);" class="form-control message-input" required
+									name="sender_message" id="description" placeholder="Message"></textarea>
 							</div>
-							<div class="g-recaptcha" 
-								data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
+							<!-- Captcha -->
+							<div class="g-recaptcha" data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
+							<!-- Submit button -->
 							<div>
-								<button type="submit" value="SEND"
-									class="btn btn-primary submit" id="send_message"
+								<button type="submit" value="SEND" class="btn btn-primary submit" id="send_message" 
 									name="contactSubmit">
-									<i class="fa fa-paper-plane" aria-hidden="true"></i> Send
-									Message
+									<i class="fa fa-paper-plane" aria-hidden="true"></i> 
+									Send Message
 								</button>
 							</div>
 						</div>
 					</form>
+					<!-- End Contact form -->
 				</div>
 				<!-- End manufacturer box -->
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-               
-
-                    <p class="lead"></p>
-
-
-                    <form id="contact-form" role="form">
-
-                        <div class="messages"></div>
-
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-                                        <div class="g-recaptcha" data-sitekey="6LfmVD8UAAAAAIQD7zobcVLV4n34temu1yN1v_LE"></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="https://bootstrapious.com/p/bootstrap-recaptcha" target="_blank">Bootstrapious</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div><!-- /.8 -->
-
-            </div> <!-- /.row-->
-
-        </div> <!-- /.container-->
-		
-		        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-        <script src="js/validator.js"></script>
-        <script src="js/contact.js"></script>
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
 	</section>
 	<!-- End contact section -->
 
-
-
+	<!-- Start footer section -->
 	<section class="footer" id="footer">
 		<div class="container footer-container h-100">
-			<div class="col-md-4">
-				<h3>About us</h3>
+			<!-- About us column -->
+			<div class="col-md-4 footer-col">
+				<h3 class="footer-h3">About us</h3>
 				<span>Text über uns...</span>
 			</div>
-			<div class="col-md-4">
-				<h3>Contact Us</h3>
-				<span> Phone : 123 - 456 - 789<br> E-mail :
-					info@comapyn.com
-				</span> <br> <br> <span>Text kontaktiere uns...</span>
+			<!-- Contact us column -->
+			<div class="col-md-4 footer-col">
+				<h3 class="footer-h3">Contact Us</h3>
+				<span>
+					Phone : 123 - 456 - 789
+					<br/> 
+					E-mail: info@comapyn.com
+				</span>
+				<br/><br/>	
+				<span>Text kontaktiere uns...</span>
 			</div>
-			<div class="col-md-4">
-				<h3>Our Location</h3>
-				<iframe
-					src="https://maps.google.de/maps?hl=de&q=berlin&t=&z=12&ie=UTF8&iwloc=B&output=embed"
-					width="100%" style="border: 0" allowfullscreen></iframe>
+			<!-- Google map Berlin column -->
+			<div class="col-md-4 footer-col">
+				<h3 class="footer-h3">Our Location</h3>
+				<iframe src="https://maps.google.de/maps?hl=de&q=berlin&t=&z=12&ie=UTF8&iwloc=B&output=embed" 
+					width="100%" style="border: 0"></iframe>
 			</div>
 		</div>
 	</section>
+	<!-- End footer section -->
 
-
-
+	<!-- Start footer -->
 	<footer>
 		<div class="container">
-			<ul class="list-inline">
-				<li class="list-inline-item"><a href="#">Imprint</a></li>
-				<li class="list-inline-item"><a href="#">Privacy</a></li>
-				<li class="list-inline-item"><a href="#">Terms</a></li>
+			<ul class="list-inline footer-list">
+				<li class="list-inline-item"><a href="#">Imprint</a> | </li>
+				<li class="list-inline-item"><a href="#">Privacy</a> | </li>
+				<li class="list-inline-item"><a href="#">Terms</a> | </li>
 				<li class="list-inline-item"><a href="#">FAQ</a></li>
 			</ul>
 		</div>
 	</footer>
-
-
-
-
-
+	<!-- End footer -->
+	
+	<!-- Contact form JavaScript -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
@@ -462,5 +351,4 @@
 	<script src="js/new-age.min.js"></script>
 
 </body>
-
 </html>
