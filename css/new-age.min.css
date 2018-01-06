@@ -86,7 +86,7 @@ hr {
 }
 
 hr.hr-menu-break-bgprim:after {
-	background: #68829e ;
+	background: #7d8e91 ;
 }
 
 hr.hr-menu-break-bgprim:after, .hr-menu-break:after {
@@ -1021,9 +1021,9 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus,
 }
 
 .bg-primary {
-	background: #68829E;
-	background: -webkit-linear-gradient(#68829E, #68829E);
-	background: linear-gradient(#68829E, #68829E)
+	background: #7d8e91;
+	background: -webkit-linear-gradient(#7d8e91, #7d8e91);
+	background: linear-gradient(#7d8e91, #7d8e91)
 }
 
 .text-primary {
