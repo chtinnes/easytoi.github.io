@@ -89,6 +89,9 @@ hr.hr-menu-break-bgprim:after {
 	background: #7d8e91 ;
 }
 
+hr {
+		color:#222222;
+}
 hr.hr-menu-break-bgprim:after, .hr-menu-break:after {
 	position: relative;
 	top: -.8em;
@@ -108,6 +111,7 @@ hr.hr-menu-break-bgprim:after, .hr-menu-break:after {
 	border-top: solid .25rem;
 	margin-top: -20px;
 	margin-bottom: 3rem !important;
+	color:#222222;
 }
 
 hr.hr-menu-break-service:after {
@@ -217,7 +221,7 @@ div.g-recaptcha {
 
 #mainNav {
 	border-color: rgba(34, 34, 34, .05);
-	background-color: #fff;
+	background-color: #505160;
 	-webkit-transition: all .35s;
 	-moz-transition: all .35s;
 	transition: all .35s;
@@ -634,7 +638,7 @@ section.download h2{
 #mainNav .navbar-toggler {
 	font-size: 12px;
 	padding: 8px 10px;
-	color: #222
+	color: #fff;
 }
 
 #mainNav .navbar-nav>li>a {
@@ -655,7 +659,7 @@ section.download h2{
 }
 
 #mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
-	color: #222
+	color: #fff;
 }
 
 #mainNav .navbar-nav>li>a:focus:hover, #mainNav .navbar-nav>li>a:hover {
