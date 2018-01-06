@@ -114,6 +114,10 @@ i.icon-truck-new:after, .icon-truck-new:after {
 	text-align: center;
 }
 
+.g-recaptcha {
+	width: 33%!important;	
+}
+
 .col-new {
 	max-width: 100% !important;
 }
