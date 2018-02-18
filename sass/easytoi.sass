@@ -5,8 +5,7 @@
  **/
 $primary-color: #acd661
 $primary-light-color: #cbf08b
-$secondary-color: #000000
-
+$secondary-color: #E66E68
 
 $dark-light-color: #343a40
 $dark-color: #292b2c
@@ -42,6 +41,13 @@ $icon-social: 50px
  *  General settings
  *
  **/
+ 
+.slogan
+    font-size: 12px
+    font-weight: 400 
+    color: $dark-color
+    text-decoration: none !important
+ 
 h4 
     font-size: 1.25rem
     font-family: inherit
@@ -57,6 +63,21 @@ h4
 .text-primary
     color: $primary-color !important
 
+a
+    text-decoration: none !important
+
+a:hover
+    text-decoration: none !important
+
+.nav-sep
+    color: #292b2c !important
+    font-size: 1rem
+    font-weight: 600
+    font-family: Lato, Helvetica, Arial, sans-serif
+    letter-spacing: 2px
+    text-transform: uppercase
+    display: block
+    padding: .4rem 1rem
 
 /**
  *
@@ -66,6 +87,7 @@ h4
 #mainNav
     background-color: $white-color !important
     border-bottom: 4px solid $primary-color
+    padding: 20px
     
     .navbar-brand
         color: $dark-color !important
@@ -73,7 +95,7 @@ h4
         font-family: inherit
         font-weight: 700
         line-height: 1.2
-        padding: 20px !important
+        margin: 0 !important
         
     .navbar-nav > li > a
         color: $dark-color !important
@@ -91,6 +113,10 @@ h4
         font-size: 1rem
         font-weight: 600
 
+.brand li
+        line-height: 0 !important
+    
+
 
 /**
  *
@@ -104,37 +130,54 @@ h4
     p
         color: $white-trans-color !important
         
-    .divider-dark 
-        &.divider-arrow-l:before 
-            border-right-color: $dark-light-color
-    
-        &.divider-diagonal-r:before 
-            border-right-color: $dark-light-color
-            
-    .divider-diagonal 
-        &:before 
-            border-right-color: transparent
-            border-left-width: 150px
-            border-left-style: solid
-            border-top: 780px solid transparent
-            height: 780px
-            margin-bottom: -780px
-            display: block
-            position: absolute
-            left: 0
-            top: 0
-            content: ''
-            z-index: 1
-    
-        &.divider-diagonal-r:before 
-            border-left-color: transparent
-            border-right-width: 150px
-            border-right-style: solid
-            border-top: 780px solid transparent
-            right: 0
-            left: auto
+    .py-5
+        padding-top: 5rem !important
+        
+        
+    @media only screen and(min-width: 1820px)    
+        .divider-dark 
+            &.divider-arrow-l:before 
+                border-right-color: $dark-light-color
+        
+            &.divider-diagonal-r:before 
+                border-right-color: $dark-light-color
+                
+        .divider-diagonal 
+            &:before 
+                border-right-color: transparent
+                border-left-width: 150px
+                border-left-style: solid
+                border-top: 812px  solid transparent
+                height: 812px 
+                margin-bottom: -812px 
+                display: block
+                position: absolute
+                left: 0
+                top: 0
+                content: ''
+                z-index: 1
+        
+            &.divider-diagonal-r:before 
+                border-left-color: transparent
+                border-right-width: 150px
+                border-right-style: solid
+                border-top: 812px  solid transparent
+                right: 0
+                left: auto
+                
+    .feature-icon
+        font-size: 20px !important
+
+    .py-5
+        padding-left: 30px !important
+        padding-right: 30px !important
 
 
+/**
+ *
+ *  Selection price
+ *
+ **/
 #prizes
 
     .price-icon
@@ -146,6 +189,30 @@ h4
         padding-left: 40px !important
 
 
+
+/**
+ *
+ *  Selection contact form
+ *
+ **/
+#contact
+    background-image: url(../img/bg-contact-form.jpg)
+   
+    .profile-img
+        margin-bottom: 40px    
+        border-radius: 150px
+        -webkit-border-radius: 150px
+        -moz-border-radius: 150px
+        background: url(URL) no-repeat
+        box-shadow: 0 0 8px rgba(0, 0, 0, .3)
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3)
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3)
+        height: 150px
+
+    .contact-text
+        color: $white-trans-color
+        font-size: 17px
+
 /**
  *
  *	Selection awesome
@@ -153,7 +220,7 @@ h4
  **/
 .awesome 
     position: relative
-    padding: $selection-padding-small
+    padding: 10px
     background-color: $primary-color
     background-position: center
     -webkit-background-size: cover
@@ -170,7 +237,7 @@ h4
 .footer 
     padding: $selection-padding-small
     background-color: $dark-light-color
-    min-height: 400px
+    min-height: 300px
     
     p
         color: $white-trans-color
