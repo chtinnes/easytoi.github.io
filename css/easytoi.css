@@ -1,0 +1,172 @@
+/**
+ *
+ *	Color settings
+ *
+ */
+/**
+ *
+ *	Dimension settings
+ *
+ */
+/**
+ *
+ *  General settings
+ *
+ */
+h4 {
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2; }
+
+.text-white {
+  color: #fff !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-primary {
+  color: #acd661 !important; }
+
+/**
+ *
+ *  Navigation
+ *
+ */
+#mainNav {
+  background-color: #fff !important;
+  border-bottom: 4px solid #acd661; }
+  #mainNav .navbar-brand {
+    color: #292b2c !important;
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 20px !important; }
+  #mainNav .navbar-nav > li > a {
+    color: #292b2c !important;
+    font-size: 1rem;
+    font-weight: 600; }
+  #mainNav .navbar-nav > li > a:hover {
+    color: #acd661 !important; }
+  #mainNav .navbar-nav > li > a.active {
+    color: #acd661 !important; }
+  #mainNav .navbar-toggler {
+    color: #292b2c !important;
+    font-size: 1rem;
+    font-weight: 600; }
+
+/**
+ *
+ *  Selection features
+ *
+ */
+#features {
+  background-color: #343a40;
+  text: left !important; }
+  #features p {
+    color: rgba(255, 255, 255, 0.8) !important; }
+  #features .divider-dark.divider-arrow-l:before {
+    border-right-color: #343a40; }
+  #features .divider-dark.divider-diagonal-r:before {
+    border-right-color: #343a40; }
+  #features .divider-diagonal:before {
+    border-right-color: transparent;
+    border-left-width: 150px;
+    border-left-style: solid;
+    border-top: 780px solid transparent;
+    height: 780px;
+    margin-bottom: -780px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: 1; }
+  #features .divider-diagonal.divider-diagonal-r:before {
+    border-left-color: transparent;
+    border-right-width: 150px;
+    border-right-style: solid;
+    border-top: 780px solid transparent;
+    right: 0;
+    left: auto; }
+
+#prizes .price-icon {
+  font-size: 50px;
+  margin-bottom: 10px; }
+#prizes .col-md-4 {
+  padding-right: 40px !important;
+  padding-left: 40px !important; }
+
+/**
+ *
+ *	Selection awesome
+ *
+ */
+.awesome {
+  position: relative;
+  padding: 50px 0;
+  background-color: #acd661;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/**
+ *
+ *  Selection footer
+ *
+ */
+.footer {
+  padding: 50px 0;
+  background-color: #343a40;
+  min-height: 400px; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px; }
+  .footer li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px; }
+  .footer .footer-text {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+    color: rgba(255, 255, 255, 0.8); }
+  .footer .fas-footer {
+    margin-right: 20px; }
+
+/**
+ *
+ *  Footer
+ *
+ */
+footer {
+  background-color: #292b2c; }
+  footer a:hover {
+    color: #acd661; }
+
+/**
+ *
+ *  Icons
+ *
+ */
+.fa-heart {
+  color: #F44336; }
+
+.fa-twitter {
+  color: #1da1f2;
+  font-size: 50px;
+  margin-right: 20px; }
+
+.fa-facebook-f {
+  color: #3b5998;
+  font-size: 50px;
+  margin-right: 20px; }
+
+.fa-google-plus-g {
+  color: #de4e43;
+  font-size: 50px;
+  margin-right: 20px; }
+
+/*# sourceMappingURL=easytoi.css.map */

@@ -1,0 +1,227 @@
+/**
+ *
+ *	Color settings
+ *
+ **/
+$primary-color: #acd661
+$primary-light-color: #cbf08b
+$secondary-color: #000000
+
+
+$dark-light-color: #343a40
+$dark-color: #292b2c
+
+$red-color: #F44336
+
+$white-color: #fff
+$white-trans-color: rgba(255, 255, 255, .8)
+
+$facebook-color: #3b5998
+$twitter-color: #1da1f2
+$google-plus-color: #de4e43
+
+
+/**
+ *
+ *	Dimension settings
+ *
+ **/
+$selection-padding-small: 50px 0
+$font-size-small: 14px
+
+$icon-small-margin: 20px
+$icon-social: 50px
+
+
+
+
+
+
+/**
+ *
+ *  General settings
+ *
+ **/
+h4 
+    font-size: 1.25rem
+    font-family: inherit
+    font-weight: 700
+    line-height: 1.2
+
+.text-white 
+    color: #fff !important
+
+.text-uppercase 
+    text-transform: uppercase !important
+
+.text-primary
+    color: $primary-color !important
+
+
+/**
+ *
+ *  Navigation
+ *
+ **/
+#mainNav
+    background-color: $white-color !important
+    border-bottom: 4px solid $primary-color
+    
+    .navbar-brand
+        color: $dark-color !important
+        font-size: 1.25rem
+        font-family: inherit
+        font-weight: 700
+        line-height: 1.2
+        padding: 20px !important
+        
+    .navbar-nav > li > a
+        color: $dark-color !important
+        font-size: 1rem
+        font-weight: 600
+        
+    .navbar-nav > li > a:hover
+        color: $primary-color !important
+        
+    .navbar-nav > li > a.active    
+        color: $primary-color !important
+        
+    .navbar-toggler
+        color: $dark-color !important
+        font-size: 1rem
+        font-weight: 600
+
+
+/**
+ *
+ *  Selection features
+ *
+ **/
+#features
+    background-color: $dark-light-color
+    text: left !important
+    
+    p
+        color: $white-trans-color !important
+        
+    .divider-dark 
+        &.divider-arrow-l:before 
+            border-right-color: $dark-light-color
+    
+        &.divider-diagonal-r:before 
+            border-right-color: $dark-light-color
+            
+    .divider-diagonal 
+        &:before 
+            border-right-color: transparent
+            border-left-width: 150px
+            border-left-style: solid
+            border-top: 780px solid transparent
+            height: 780px
+            margin-bottom: -780px
+            display: block
+            position: absolute
+            left: 0
+            top: 0
+            content: ''
+            z-index: 1
+    
+        &.divider-diagonal-r:before 
+            border-left-color: transparent
+            border-right-width: 150px
+            border-right-style: solid
+            border-top: 780px solid transparent
+            right: 0
+            left: auto
+
+
+#prizes
+
+    .price-icon
+        font-size: $icon-social
+        margin-bottom: 10px
+ 
+    .col-md-4
+        padding-right: 40px !important
+        padding-left: 40px !important
+
+
+/**
+ *
+ *	Selection awesome
+ *
+ **/
+.awesome 
+    position: relative
+    padding: $selection-padding-small
+    background-color: $primary-color
+    background-position: center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    
+    
+/**
+ *
+ *  Selection footer
+ *
+ **/
+.footer 
+    padding: $selection-padding-small
+    background-color: $dark-light-color
+    min-height: 400px
+    
+    p
+        color: $white-trans-color
+        font-size: $font-size-small
+        
+    li
+        color: $white-trans-color
+        font-size: $font-size-small
+        
+
+    .footer-text 
+        margin-bottom: 1rem
+        font-style: normal
+        line-height: inherit
+        color: $white-trans-color
+
+    .fas-footer 
+        margin-right: $icon-small-margin
+
+
+/**
+ *
+ *  Footer
+ *
+ **/    
+footer 
+    background-color: $dark-color
+    
+    a:hover
+        color: $primary-color
+    
+    
+/**
+ *
+ *  Icons
+ *
+ **/        
+.fa-heart
+    color: $red-color
+    
+.fa-twitter
+    color: $twitter-color
+    font-size: $icon-social
+    margin-right: $icon-small-margin
+
+.fa-facebook-f
+    color: $facebook-color
+    font-size: $icon-social
+    margin-right: $icon-small-margin
+
+.fa-google-plus-g
+    color: $google-plus-color
+    font-size: $icon-social
+    margin-right: $icon-small-margin
