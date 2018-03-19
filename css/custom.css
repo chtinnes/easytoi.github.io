@@ -37,12 +37,13 @@ label {
 
 .tablet-bg
 {
-    height: 450px;
-    padding-top:50px;
-    padding-left: 195px;
+    height: 600px;
+    padding-top:45px;
+    padding-left: 44px;
     width: 100%;
     background-image: url("../img/tablet.png");
     background-repeat: no-repeat;
+    background-size: 750px 505px;
 }
 
 /** 
