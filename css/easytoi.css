@@ -8,11 +8,22 @@
  *	Dimension settings
  *
  */
+.white-bg {
+  background: #fff; }
+
+#main-section {
+  padding-top: 170px;
+  padding-bottom: 0px !important; }
+
 /**
  *
  *  General settings
  *
  */
+.small-info-txt {
+  font-size: 13px;
+  text-align: right; }
+
 .slogan {
   font-size: 12px;
   font-weight: 400;
@@ -82,6 +93,9 @@ a:hover {
 .brand li {
   line-height: 0 !important; }
 
+.fas-navbar {
+  margin-right: 10px; }
+
 /**
  *
  *  Selection features
@@ -103,9 +117,9 @@ a:hover {
       border-right-color: transparent;
       border-left-width: 150px;
       border-left-style: solid;
-      border-top: 812px solid transparent;
-      height: 812px;
-      margin-bottom: -812px;
+      border-top: 867px solid transparent;
+      height: 867px;
+      margin-bottom: -867px;
       display: block;
       position: absolute;
       left: 0;
@@ -116,7 +130,7 @@ a:hover {
       border-left-color: transparent;
       border-right-width: 150px;
       border-right-style: solid;
-      border-top: 812px solid transparent;
+      border-top: 867px solid transparent;
       right: 0;
       left: auto; } }
   #features .feature-icon {
@@ -165,7 +179,7 @@ a:hover {
  */
 .awesome {
   position: relative;
-  padding: 10px;
+  padding: 5px;
   background-color: #acd661;
   background-position: center;
   -webkit-background-size: cover;
