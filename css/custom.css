@@ -408,10 +408,13 @@ i.icon-truck-new:after, .icon-truck-new:after {
 	margin-top: 0px;
 }
 
+.cr_form cr_font {
+	margin-top: 0px !important;
+}
+
 form {
 	margin: 0 auto;
 	width: 100%;
-	margin-top: 30px;
 }
 
 div.g-recaptcha {
