@@ -31,17 +31,77 @@ $font-size-small: 14px
 $icon-small-margin: 20px
 $icon-social: 50px
 
+/**
+ *
+ *  Images settings
+ *
+ **/
+$url_0: url(../img/tablet.png)
 
+
+/**
+ *
+ *  Slider settings
+ *
+ **/
 .white-bg
     background: $white-color
-
-#main-section
-    padding-top: 170px
-    padding-bottom: 0px !important
 
 .slider-section
     padding: 0px !important
 
+
+/**
+ *
+ *  Header video selection settings
+ *
+ **/
+#main-section
+    padding-top: 170px
+    padding-bottom: 0px !important
+    
+
+
+.tablet-bg 
+    height: 600px
+    padding-top: 45px
+    padding-left: 44px
+    width: 100%
+    background-image: $url_0
+    background-repeat: no-repeat
+    background-size: 750px 505px
+
+.yt-frame
+    height: 415px
+    width: 663px   
+    
+@media only screen and(max-width: 1199px)  
+    .tablet-bg 
+        background-size: 600px 400px 
+        height: 460px
+        padding-top: 35px
+        padding-left: 35px
+        
+@media only screen and(max-width: 1199px)          
+    .yt-frame
+        height: 329px
+        width: 532px
+
+@media only screen and(max-width: 995px)  
+    .tablet-bg 
+        background-size: 450px 305px 
+        height: 400px
+        padding-top: 26px
+        padding-left: 26px
+        
+@media only screen and(max-width: 995px)          
+    .yt-frame
+        height: 253px
+        width: 400px
+
+@media only screen and(max-width: 768px)  
+    .tablet-bg 
+        background-size: 320px 220px 
 
 /**
  *
@@ -129,6 +189,11 @@ a:hover
     
 .fas-navbar
     margin-right: 10px 
+
+
+
+
+
     
 
 /**
@@ -145,7 +210,10 @@ a:hover
         
     .py-5
         padding-top: 5rem !important
-        
+    
+    
+    .row
+        margin-right: 0px !important
         
     @media only screen and(min-width: 1820px)    
         .divider-dark 
