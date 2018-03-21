@@ -26,6 +26,27 @@
 
 /**
  *
+ *  How selection settings
+ *
+ */
+.sell-easytoi-device {
+  width: 400px; }
+
+.sell-easytoi-device {
+  width: 350px; }
+
+@media only screen and (max-width: 995px) {
+  .sell-easytoi-device {
+    width: 250px; } }
+@media only screen and (max-width: 768px) {
+  .sell-easytoi-device {
+    width: 180px; } }
+@media only screen and (max-width: 572px) {
+  .sell-easytoi-device {
+    width: 350px;
+    margin-bottom: 20px; } }
+/**
+ *
  *  Header video selection settings
  *
  */

@@ -723,12 +723,7 @@ input[type=checkbox]:checked+label {
 }
 
 .design-process-content img {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 0;
-	max-height: 100%;
+    
 }
 
 .design-process-content h3 {
