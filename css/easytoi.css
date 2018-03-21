@@ -74,6 +74,20 @@
  *  General settings
  *
  */
+.profile-img-sel {
+  text-align: center; }
+
+.profile-txt {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  text-align: center !important;
+  padding-bottom: 20px; }
+
+.team-row {
+  padding-bottom: 60px; }
+  .team-row .col-sm-4 {
+    max-width: 20% !important; }
+
 .aweseome-txt h2 {
   line-height: 50px; }
 
@@ -218,7 +232,7 @@ a:hover {
 #contact {
   background-image: url(../img/bg-contact-form.jpg); }
   #contact .profile-img {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
@@ -229,7 +243,11 @@ a:hover {
     height: 150px; }
   #contact .contact-text {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 17px; }
+    font-size: 17px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    flex: 100% !important;
+    max-width: 100% !important; }
 
 /**
  *
