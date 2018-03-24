@@ -740,7 +740,7 @@ input[type=checkbox]:checked+label {
 	padding: 0;
 	position: relative;
 	max-width: 650px;
-	margin: 20px auto 26px;
+	margin: 40px auto 26px;
 	border: none;
 	z-index: 0;
 }
@@ -869,4 +869,21 @@ input[type=checkbox]:checked+label {
 	.process-model.more-icon-preocess {
 		text-align: center;
 	}
+}
+
+.img-easytoi-connect {
+	padding: 40px;
+    width: 800px;
+    height: 390px;
+    margin-bottom: 50px;
+}
+
+.input-container-2 {
+	width: 850px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.center-align {
+	text-align: center;
 }
