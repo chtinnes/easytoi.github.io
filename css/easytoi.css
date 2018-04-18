@@ -161,6 +161,16 @@ a:hover {
  *  Navigation
  *
  */
+.hide-mobile {
+  display: none;
+  float: left; }
+
+.hr-mobile {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 #mainNav {
   background-color: #fff !important;
   border-bottom: 4px solid #acd661;
