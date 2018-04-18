@@ -55,13 +55,15 @@
   padding-bottom: 0px !important; }
 
 .tablet-bg {
-  height: 600px;
+  height: 610px;
   padding-top: 45px;
   padding-left: 44px;
-  width: 100%;
+  width: 66%;
   background-image: url(../img/tablet.png);
   background-repeat: no-repeat;
-  background-size: 750px 505px; }
+  background-size: 750px 505px;
+  margin: 0 auto;
+  margin-top: 40px; }
 
 .yt-frame {
   height: 415px;
@@ -114,7 +116,8 @@
 
 .small-info-txt {
   font-size: 13px;
-  text-align: right; }
+  text-align: left;
+  margin-left: 12px; }
 
 .slogan {
   font-size: 12px;
@@ -211,9 +214,9 @@ a:hover {
       border-right-color: transparent;
       border-left-width: 150px;
       border-left-style: solid;
-      border-top: 867px solid transparent;
-      height: 867px;
-      margin-bottom: -867px;
+      border-top: 786px solid transparent;
+      height: 786px;
+      margin-bottom: -786px;
       display: block;
       position: absolute;
       left: 0;
@@ -224,7 +227,7 @@ a:hover {
       border-left-color: transparent;
       border-right-width: 150px;
       border-right-style: solid;
-      border-top: 867px solid transparent;
+      border-top: 786px solid transparent;
       right: 0;
       left: auto; } }
   #features .feature-icon {
@@ -252,16 +255,6 @@ a:hover {
  */
 #contact {
   background-image: url(../img/bg-contact-form.jpg); }
-  #contact .profile-img {
-    margin-bottom: 20px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(URL) no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    height: 150px; }
   #contact .contact-text {
     color: rgba(255, 255, 255, 0.8);
     font-size: 17px;
@@ -269,6 +262,17 @@ a:hover {
     padding-right: 0px !important;
     flex: 100% !important;
     max-width: 100% !important; }
+
+#weare .profile-img {
+  margin-bottom: 20px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(URL) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  height: 150px; }
 
 /**
  *

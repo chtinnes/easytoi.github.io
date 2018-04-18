@@ -65,7 +65,11 @@
 						href="#prizes">Prizes</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll-trigger"
 						href="#contact">Contact</a></li>
-					<li class="nav-item"><span class="nav-sep">|</span></li>
+						
+					<li class="nav-item hide-mobile"><span class="nav-sep-hm">|</span></li>	
+					<li class="nav-item show-mobile"><span class="nav-sep-sm"><hr align="left" /></span></li>
+					
+					
 					<li class="nav-item"><a class="nav-link js-scroll-trigger"
                         href="userarea.html"><i class="fas-navbar fa fa-user"></i>User Area</a></li>
 				</ul>
@@ -74,18 +78,19 @@
 	</nav>
 	
 	<!-- Start main section -->
-    <section class="bg-primary" id="main-section">
+    <section class="bg-primary header-vid" id="main-section">
 	    <div class="container">
 	         <div class="row">
-                <div class="col-9">
+            
                     <div class="tablet-bg responsive-video">
-                        <iframe src="http://www.youtube.com/embed/DdaxoA518BA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe class="yt-frame" src="http://www.youtube.com/embed/DdaxoA518BA" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
                     </div>
-                </div>
-                <div class="aweseome-txt col-3"">
+               
+                <!-- <div class="aweseome-txt col-3"">
                     <h2>Build</h2><h2>Awesome</h2><h2>Smarthome</h2><h2>Devices</h2>
                     <p>The solution for your company.<br>Keep it simple.</p>
-                </div>       
+                </div>  
+                -->     
             </div>
         </div>
     </section>
@@ -171,7 +176,7 @@
             <div class="col-lg-5 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg b-loaded" 
                 style="background-image: url(img/features-img.jpg);">
             </div>
-            <div class="col-lg-4 py-5">
+            <div class="col-lg-6 py-5">
 	            <h2 class="display-4 text-slab text-white text-uppercase mt-0 mb-5">
 	               Choose <span class="text-primary font-weight-bold">EasyTOI</span>
 	            </h2>
@@ -216,20 +221,62 @@
 	<!-- Start how section -->
     <section id="how">
         <div class="container">
+        
+       <div class="row">
+        <div class="col-md-12">
+                       <h2 class="display-6 text-slab text-center text-uppercase mt-0 mb-5">
+                          How it works
+                        </h2>
+                        </div>
+       </div>
+        
+        <div class="row">
+            <div class="feature_teaser col-sm-4 col-md-4 img-center"> 
+                <img alt="responsive" src="https://plethorathemes.com/html/cleanstart/images/phone-v2.png">
+               <h4 class="font-weight-bold text-uppercase">Full support</h4>
+                <p class="text-center">You get full support and we manage your smart home solution to success. 
+                We make your upgrade as easy as possible.</p>
+            </div>
+                         
+            <div class="feature_teaser col-sm-4 col-md-4 img-center"> 
+                <img alt="responsive" src="https://plethorathemes.com/html/cleanstart/images/phone-v2.png">
+                <h4 class="font-weight-bold text-uppercase">Easy Build In</h4>
+                <p class="text-center">Install EasyTOI in your product and get access to our cloud.
+                It provides everything to interact with a smart home.
+            </div>
+            
+            <div class="feature_teaser col-sm-4 col-md-4 img-center"> 
+                <img alt="responsive" src="https://plethorathemes.com/html/cleanstart/images/phone-v2.png">
+                <h4 class="font-weight-bold text-uppercase">Great Reward</h4>
+                <p class="text-center">You benefit from the expanded market that you have entered with EasyTOI and 
+                improve your product with our device analysis.
+            </div>     
+            
+             
+           
+        </div>
+        
+        
+            <div class="row row-centered">
+         <div class="col-md-12">
+                    <button type="submit" class="btn-sm submit-btn text-center works-submit">More Details</button>
+                        </div>
+       </div>
+        
             <!-- Start Easytoi connects 
             <div class="row input-container-2">
                 <div class="col-xs-12"> 
-                    <h3 class="center-align">EasyTOI - installed in the device instead of intermediate devices</h3>
-                    <img class="img-easytoi-connect" src="./img/Easytoi-Connect.png" alt="Sell your smart home device">
+                    <h3 class="center-align"><b>This is how EasyTOI works</b></h3>
+                    <img class="img-easytoi-connect" src="./img/Easytoi-Connect-Smarthome-Grey.png" alt="Sell your smart home device">
                 </div>
             </div>
-            <!-- End Easytoi connects -->
+            End Easytoi connects -->
             
-            <!-- Start how to upgrade -->
+            <!-- Start how to upgrade 
             <div class="row">
                 <div class="col-xs-12"> 
                 <h3 class="center-align">How to upgrade your device</h3>
-                     <!-- Nav steps -->
+                     <!-- Nav steps 
 			         <ul class="nav nav-tabs process-model more-icon-preocess" role="tablist">
 	                     <li role="presentation" class="active">
 	                         <a href="#consulting" aria-controls="consulting" role="tab"data-toggle="tab" >
@@ -257,11 +304,11 @@
 				         </li>
 			         </ul>
 
-			        <!-- Tab panes -->
+			        <!-- Tab panes 
 			        <div class="tab-content">
 			          <div role="tabpanel" class="tab-pane active" id="consulting">
 			            <div class="design-process-content">
-			             <!-- <h3 class="semi-bold">Consulting</h3> -->
+			             <!-- <h3 class="semi-bold">Consulting</h3> 
 			             <div class="row">
                               <div class="col-sm-5">
                                   <img class="sell-easytoi-device" src="./img/consulting-easytoi.png" alt="Sell your smart home device">
@@ -275,7 +322,7 @@
 			          </div>
 			          <div role="tabpanel" class="tab-pane" id="buildin">
 			            <div class="design-process-content">
-			              <!-- <h3 class="semi-bold">Build In</h3> -->
+			              <!-- <h3 class="semi-bold">Build In</h3> 
 			              <div class="row">
                               <div class="col-sm-5">
                                   <img class="sell-easytoi-device" src="./img/buildin-easytoi.png" alt="Sell your smart home device">
@@ -292,7 +339,7 @@
 			          </div>
 			          <div role="tabpanel" class="tab-pane" id="sell">
                         <div class="design-process-content">
-			              <!--<h3 class="semi-bold">Ready To Sell</h3> -->
+			              <!--<h3 class="semi-bold">Ready To Sell</h3> 
 			              <div class="row">
 							  <div class="col-sm-5">
 							      <img class="sell-easytoi-device" src="./img/sell-easytoi-device.png" alt="Sell your smart home device">
@@ -307,7 +354,7 @@
 			          </div>
 			          <div role="tabpanel" class="tab-pane" id="feedback">
 			            <div class="design-process-content">
-			             <!-- <h3>Feedback</h3> -->
+			             <!-- <h3>Feedback</h3> 
 			              <div class="row">
                               <div class="col-sm-5">
                                   <img class="sell-easytoi-device" src="./img/feedback-easytoi.png" alt="Sell your smart home device">
@@ -322,10 +369,11 @@
 			      </div>
                 </div>
             </div>
-            <!-- End how to upgrade -->
+          End how to upgrade -->
         </div>
     </section>    
     <!-- End how section -->
+   
 	
 	<!-- Start contact section -->
     <section class="bg-primary" id="prizes">
@@ -401,10 +449,17 @@
     </section>
     <!-- End contact section -->
     
-	<!-- Start contact section -->
-    <section id="contact">
+    <section id="weare">
         <div class="container">
-            <div class="row team-row">
+            <div class="row">
+            <div class="span12 aligncenter flyLeft animated fadeInLeftBig">
+                      <h3 class="weare-quote"><i class="fas fa-quote-left weare-quote-icon"></i>  
+                      Our goal is to revolutionize the smart home world. <br/>Smart home installed in the device instead of intermediate devices.
+                      </h3>
+                </div>
+            </div>
+
+             <div class="row team-row">
                 <div class="col profile-img-sel">
                     <img src="img/profil-img.png" class="rounded-circle profile-img">
                     <div class="col profile-txt">
@@ -434,15 +489,18 @@
                     </div>
                 </div>
             </div>
-        
+        </div>
+    </section> 
+    
+	<!-- Start contact section -->
+    <section id="contact">
+        <div class="container">
             <div class="row input-container">
                 <div class="contact-text col-sm-8">
-                <p class="contact-text">We are EasyTOI.
-                If you have any further questions or suggestions, we would love to hear from you.
-                </p>
-                <p class="contact-text ">
-                Please do not hesitate to send us an Email or give us a call. 
-                </p>
+               <h2 class="display-6 text-slab text-white text-uppercase mt-0 mb-5">
+                   Get in touch <span class="text-primary font-weight-bold">with your smart home solution</span>.
+                </h2>
+         
                 </div>
 				<div class="col-xs-12">
 				    <div class="styled-input wide">
@@ -488,8 +546,7 @@
 			<div class="col-md-4">
 				<h4 class="text-uppercase text-white">About</h4>
 				<p class ="footer-text">
-                EasyTOI - a young and motivated team with the goal to revolutionize the smart home world. 
-                Smart home installed in the device instead of intermediate devices. 
+                We live in creativity... 
                 </p>
 			</div>
 			<!-- Contact us column -->
@@ -562,10 +619,11 @@
 	</footer>
 	<!-- End footer -->
 
-	<!-- Contact form JavaScript -->
+	<!-- Contact form JavaScript 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js?&hl=en' async defer></script>
+	-->
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
@@ -584,24 +642,6 @@
 	<!-- Ajax -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
 	<script type='text/javascript' src='jquery.min.js'></script>
-	
-	<!-- Img Slider -->
-	<script src="./js/jquery-1.11.1.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#clients-slider").carousel({
-                interval: 6000
-            });
-        });
-    </script>
-    
-    <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-    </script>
     
     <!-- Newsletter -->
     <script>

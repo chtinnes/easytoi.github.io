@@ -717,13 +717,12 @@ input[type=checkbox]:checked+label {
 }
 
 .design-process-content {
-	
 	position: relative;
 	padding: 30px 30px 30px 30px;
 }
 
 .design-process-content img {
-    
+	
 }
 
 .design-process-content h3 {
@@ -753,7 +752,6 @@ input[type=checkbox]:checked+label {
 	height: 4px;
 	margin: 0 auto;
 	position: absolute;
-	
 	top: 45px;
 	width: 50%;
 	z-index: -1;
@@ -873,17 +871,85 @@ input[type=checkbox]:checked+label {
 
 .img-easytoi-connect {
 	padding: 40px;
-    width: 800px;
-    height: 390px;
-    margin-bottom: 50px;
+	width: 600px;
+	height: 580px;
+	margin-bottom: 50px;
+}
+
+#weare {
+	background-image:
+		url("https://mobirise.com/bootstrap-4-theme/assets/images/jumbotron.jpg");
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.weare-quote {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.1em;
+	margin-bottom: 90px;
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.weare-quote-icon {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.col-2 {
+	text-align: center;
 }
 
 .input-container-2 {
 	width: 850px;
-    max-width: 100%;
-    margin: 20px auto 25px auto;
+	max-width: 100%;
+	margin: 20px auto 25px auto;
 }
 
 .center-align {
 	text-align: center;
 }
+
+.header-vid {
+	background: url(../img/smarthome-header.png) !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.bg-parallax {
+	height: 100% !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.img-center {
+	text-align: center;
+}
+
+section.features_teasers_wrapper .feature_teaser {
+	text-align: center;
+	border-right: solid 1px #cccccc;
+	overflow: hidden;
+	padding: 30px;
+}
+
+#service p {
+	font-size: 16px;
+}
+
+.works-submit {
+	margin-top: 40px;
+	float: none !important;
+}
+
+.row-centered {
+	text-align: center;
+}
+
+
